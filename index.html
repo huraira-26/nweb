@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2E2230">
+    <title>Belle Bloom | Beauty Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header">
+        <!-- Promo bar only — no contact/email -->
+        <div class="top-bar">
+            <span class="sparkle">✨</span> New client special — 20% off your first visit <span class="sparkle">✨</span>
+        </div>
+
+        <nav class="main-nav">
+            <a href="#home" class="logo" aria-label="Belle Bloom home">
+                <span class="logo-mark">
+                    <svg width="28" height="28" viewBox="0 0 40 40" aria-hidden="true">
+                        <circle cx="20" cy="9"  r="8" fill="#E85A71"/>
+                        <circle cx="10" cy="18" r="8" fill="#D4A5A5"/>
+                        <circle cx="30" cy="18" r="8" fill="#D4A5A5"/>
+                        <circle cx="14" cy="29" r="8" fill="#F3A5B8"/>
+                        <circle cx="26" cy="29" r="8" fill="#F3A5B8"/>
+                        <circle cx="20" cy="20" r="5.5" fill="#2E2230"/>
+                    </svg>
+                </span>
+                <span class="logo-text">
+                    Belle Bloom
+                    <span>Beauty Salon</span>
+                </span>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">☰</label>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#designs">Our Designs</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#book" class="nav-cta js-book">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Unleash Your Radiance</h1>
+            <p>Luxury beauty and hair services tailored for the modern woman. We specialize in lived-in color, transformative cuts, and glow-boosting facials.</p>
+            <a href="#book" class="cta-button js-book">Book Your Appointment</a>
+        </div>
+    </section>
+
+    <!-- ==================== SIGNATURE SERVICES ==================== -->
+    <section class="services" id="services">
+        <h2>Our Signature Experiences</h2>
+        <p class="subtitle">Crafted rituals designed to make you feel effortlessly beautiful.</p>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Lived-In Color</h3>
+                <p>Dimensional, low-maintenance color that grows out beautifully.</p>
+            </div>
+            <div class="service-card">
+                <h3>The Glow Facial</h3>
+                <p>Our signature treatment for radiant, healthy-looking skin.</p>
+            </div>
+            <div class="service-card">
+                <h3>Bridal Styling</h3>
+                <p>Effortless, romantic hair and makeup for your special day.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER / CONTACT ==================== -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-inner">
+
+            <!-- Column 1: Brand + social -->
+            <div class="footer-brand">
+                <a href="#home" class="logo">
+                    <span class="logo-mark">
+                        <svg width="26" height="26" viewBox="0 0 40 40" aria-hidden="true">
+                            <circle cx="20" cy="9"  r="8" fill="#E85A71"/>
+                            <circle cx="10" cy="18" r="8" fill="#D4A5A5"/>
+                            <circle cx="30" cy="18" r="8" fill="#D4A5A5"/>
+                            <circle cx="14" cy="29" r="8" fill="#F3A5B8"/>
+                            <circle cx="26" cy="29" r="8" fill="#F3A5B8"/>
+                            <circle cx="20" cy="20" r="5.5" fill="#FCF6F3"/>
+                        </svg>
+                    </span>
+                    <span class="logo-text">
+                        Belle Bloom
+                        <span>Beauty Salon</span>
+                    </span>
+                </a>
+                <p>A boutique salon where luxury meets warmth. Hair, skin and bridal beauty crafted just for you.</p>
+
+                <div class="social-row">
+                    <a href="#" class="social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4 1.3-.1 1.7-.1 4.9-.1zm0 1.8c-3.1 0-3.5 0-4.8.07-1.1.05-1.7.24-2.1.4-.5.2-.9.44-1.2.75-.3.3-.55.7-.75 1.2-.16.4-.35 1-.4 2.1-.07 1.3-.07 1.7-.07 4.8s0 3.5.07 4.8c.05 1.1.24 1.7.4 2.1.2.5.44.9.75 1.2.3.3.7.55 1.2.75.4.16 1 .35 2.1.4 1.3.07 1.7.07 4.8.07s3.5 0 4.8-.07c1.1-.05 1.7-.24 2.1-.4.5-.2.9-.44 1.2-.75.3-.3.55-.7.75-1.2.16-.4.35-1 .4-2.1.07-1.3.07-1.7.07-4.8s0-3.5-.07-4.8c-.05-1.1-.24-1.7-.4-2.1-.2-.5-.44-.9-.75-1.2-.3-.3-.7-.55-1.2-.75-.4-.16-1-.35-2.1-.4-1.3-.07-1.7-.07-4.8-.07zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.08a3.18 3.18 0 1 0 0-6.36 3.18 3.18 0 0 0 0 6.36zm6.24-8.28a1.14 1.14 0 1 1-2.28 0 1.14 1.14 0 0 1 2.28 0z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
+                    </a>
+                    <a href="#" class="social-btn" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24"><path d="M16.6 5.82A5.4 5.4 0 0 1 15.5 2h-3.1v13.28a2.78 2.78 0 1 1-2.78-2.78c.28 0 .55.04.8.12V9.44a6.05 6.05 0 0 0-.8-.05 5.9 5.9 0 1 0 5.9 5.9V9.1a8.5 8.5 0 0 0 4.9 1.55V7.55a5.4 5.4 0 0 1-3.82-1.73z"/></svg>
+                    </a>
+                    <a href="https://wa.me/15551234567" class="social-btn" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.74.46 3.44 1.32 4.94L2 22l5.34-1.4a9.8 9.8 0 0 0 4.7 1.2h.01c5.43 0 9.84-4.4 9.84-9.84S17.47 2 12.04 2zm0 17.94h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.1.81.83-3.03-.2-.31a8.16 8.16 0 0 1-1.25-4.35c0-4.52 3.68-8.2 8.2-8.2 2.19 0 4.25.86 5.8 2.4a8.15 8.15 0 0 1 2.4 5.8c0 4.52-3.68 8.2-8.2 8.2zm4.5-6.14c-.25-.12-1.47-.72-1.7-.8-.23-.09-.4-.13-.56.12-.17.25-.65.8-.8.96-.14.17-.29.19-.54.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.46-1.37-1.7-.14-.26-.02-.4.11-.52.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.23.25-.86.84-.86 2.05s.88 2.38 1 2.54c.12.17 1.73 2.64 4.2 3.7.59.25 1.04.4 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Contact -->
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <ul class="contact-list">
+                    <li>
+                        <span class="ci">📍</span>
+                        <div>
+                            <strong>Address</strong>
+                            <span>123 Rose Avenue,<br>Your City, 54000</span>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ci">📞</span>
+                        <div>
+                            <strong>Phone</strong>
+                            <a href="tel:+15551234567">(555) 123-4567</a>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="ci">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <a href="mailto:hello@bellebloom.com">hello@bellebloom.com</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="quick-actions">
+                    <a href="tel:+15551234567" class="quick-btn primary">📞 Call Now</a>
+                    <a href="https://wa.me/15551234567" class="quick-btn ghost">💬 WhatsApp</a>
+                    <a href="https://maps.google.com/?q=123+Rose+Avenue" target="_blank" rel="noopener" class="quick-btn ghost">🗺️ Get Directions</a>
+                </div>
+            </div>
+
+            <!-- Column 3: Hours -->
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul class="hours-list">
+                    <li><span class="day">Monday</span><span class="time">9AM – 8PM</span></li>
+                    <li><span class="day">Tuesday</span><span class="time">9AM – 8PM</span></li>
+                    <li><span class="day">Wednesday</span><span class="time">9AM – 8PM</span></li>
+                    <li><span class="day">Thursday</span><span class="time">9AM – 8PM</span></li>
+                    <li><span class="day">Friday</span><span class="time">9AM – 8PM</span></li>
+                    <li><span class="day">Saturday</span><span class="time">9AM – 6PM</span></li>
+                    <li><span class="day">Sunday</span><span class="closed">Closed</span></li>
+                </ul>
+                <span class="open-badge"><span class="pulse"></span> Open now</span>
+            </div>
+
+            <!-- Column 4: Quick links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="contact-list">
+                    <li><span class="ci">✂️</span><div><a href="#services">Our Services</a></div></li>
+                    <li><span class="ci">💅</span><div><a href="#designs">Our Designs</a></div></li>
+                    <li><span class="ci">💳</span><div><a href="#pricing">Pricing</a></div></li>
+                    <li><span class="ci">📅</span><div><a href="#book" class="js-book">Book Appointment</a></div></li>
+                    <li><span class="ci">💬</span><div><a href="mailto:hello@bellebloom.com">Send a Message</a></div></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>&copy; 2026 Belle Bloom Beauty Salon. All rights reserved.</span>
+            <span class="legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cancellation Policy</a>
+            </span>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <button type="button" class="floating-cta js-book">📅 Book Now</button>
+
+    <!-- ==================== BOOKING MODAL ==================== -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="booking-modal">
+            <button type="button" class="modal-close" id="modalClose" aria-label="Close booking window">&times;</button>
+
+            <h2 class="modal-title" id="modalTitle">Book Your Appointment</h2>
+            <p class="modal-sub">Pick a date, then choose an available time slot.</p>
+
+            <div class="booking-layout">
+                <div class="calendar-panel">
+                    <div class="cal-header">
+                        <button type="button" class="cal-nav" id="prevMonth" aria-label="Previous month">‹</button>
+                        <span class="cal-month" id="monthLabel"></span>
+                        <button type="button" class="cal-nav" id="nextMonth" aria-label="Next month">›</button>
+                    </div>
+
+                    <div class="cal-weekdays">
+                        <span>Sun</span><span>Mon</span><span>Tue</span>
+                        <span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                    </div>
+
+                    <div class="cal-grid" id="calGrid"></div>
+
+                    <div class="cal-legend">
+                        <span><i class="lg-dot free"></i> Available</span>
+                        <span><i class="lg-dot full"></i> Fully booked</span>
+                        <span><i class="lg-dot sel"></i> Selected</span>
+                    </div>
+                </div>
+
+                <div class="slots-panel">
+                    <h3 id="slotsTitle">Select a date</h3>
+                    <p class="slots-sub" id="slotsSub">Choose a highlighted day on the calendar.</p>
+                    <div class="slots-grid" id="slotsGrid">
+                        <p class="empty-note">No date selected yet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    /* =========================================================
+       BOOKING SYSTEM
+       ========================================================= */
+    const STORAGE_KEY = 'belleBloomBookings_v1';
+
+    const TIME_SLOTS = [
+        '9:00 AM','10:00 AM','11:00 AM','12:00 PM','1:00 PM',
+        '2:00 PM','3:00 PM','4:00 PM','5:00 PM','6:00 PM','7:00 PM'
+    ];
+
+    const modal       = document.getElementById('bookingModal');
+    const calGrid     = document.getElementById('calGrid');
+    const monthLabel  = document.getElementById('monthLabel');
+    const slotsGrid   = document.getElementById('slotsGrid');
+    const slotsTitle  = document.getElementById('slotsTitle');
+    const slotsSub    = document.getElementById('slotsSub');
+
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+
+    let bookings        = loadBookings();
+    let viewYear        = today.getFullYear();
+    let viewMonth       = today.getMonth();
+    let selectedDateKey = null;
+
+    function pad(n) { return String(n).padStart(2, '0'); }
+    function keyOf(d) {
+        return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+    }
+    function hashStr(s) {
+        let h = 0;
+        for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+        return h;
+    }
+    function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, c => (
+            { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]
+        ));
+    }
+    function loadBookings() {
+        try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+        catch (e) { return {}; }
+    }
+    function saveBookings() {
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(bookings)); }
+        catch (e) { /* storage may be unavailable */ }
+    }
+
+    const FORCED_FULL = [2, 5, 9, 14].map(n => {
+        const d = new Date(today);
+        d.setDate(d.getDate() + n);
+        return keyOf(d);
+    });
+
+    function dayFullyBooked(key) {
+        if (FORCED_FULL.includes(key)) return true;
+        return (hashStr(key) % 100) < 10;
+    }
+
+    function slotState(dateKey, slot, index) {
+        if (bookings[dateKey] && bookings[dateKey][slot]) return 'booked';
+        if (dayFullyBooked(dateKey)) return 'booked';
+        const seed = (hashStr(dateKey) + index * 37) % 100;
+        return seed < 32 ? 'booked' : 'free';
+    }
+
+    function isPastSlot(dateKey, time) {
+        if (dateKey !== keyOf(today)) return false;
+        const [t, mer] = time.split(' ');
+        let h = parseInt(t.split(':')[0], 10);
+        if (mer === 'PM' && h !== 12) h += 12;
+        if (mer === 'AM' && h === 12) h = 0;
+        return h <= new Date().getHours();
+    }
+
+    function slotsForDate(dateKey) {
+        return TIME_SLOTS.map((t, i) => {
+            let state = slotState(dateKey, t, i);
+            if (state === 'free' && isPastSlot(dateKey, t)) state = 'booked';
+            return { time: t, state: state };
+        });
+    }
+
+    function freeCount(dateKey) {
+        return slotsForDate(dateKey).filter(s => s.state === 'free').length;
+    }
+
+    function renderCalendar() {
+        monthLabel.textContent = new Date(viewYear, viewMonth, 1)
+            .toLocaleString('en-US', { month: 'long', year: 'numeric' });
+
+        calGrid.innerHTML = '';
+
+        const firstDay    = new Date(viewYear, viewMonth, 1).getDay();
+        const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
+
+        for (let i = 0; i < firstDay; i++) {
+            const blank = document.createElement('button');
+            blank.type = 'button';
+            blank.className = 'cal-day empty';
+            blank.disabled = true;
+            blank.tabIndex = -1;
+            calGrid.appendChild(blank);
+        }
+
+        for (let d = 1; d <= daysInMonth; d++) {
+            const date = new Date(viewYear, viewMonth, d);
+            const key  = keyOf(date);
+
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'cal-day';
+            btn.textContent = d;
+            btn.dataset.date = key;
+
+            const isPast   = date < today;
+            const isSunday = date.getDay() === 0;
+
+            if (isPast) {
+                btn.disabled = true;
+                btn.classList.add('past');
+            } else if (isSunday) {
+                btn.disabled = true;
+                btn.classList.add('closed');
+                btn.title = 'Closed on Sundays';
+            } else if (dayFullyBooked(key) || freeCount(key) === 0) {
+                btn.disabled = true;
+                btn.classList.add('full');
+                btn.title = 'Fully booked';
+            } else {
+                if (freeCount(key) < TIME_SLOTS.length) {
+                    const dot = document.createElement('span');
+                    dot.className = 'dot';
+                    btn.appendChild(dot);
+                }
+                btn.addEventListener('click', () => selectDate(key));
+            }
+
+            if (key === keyOf(today)) btn.classList.add('today');
+            if (key === selectedDateKey) btn.classList.add('selected');
+
+            calGrid.appendChild(btn);
+        }
+    }
+
+    function selectDate(dateKey) {
+        selectedDateKey = dateKey;
+        renderCalendar();
+        renderSlots(dateKey);
+    }
+
+    function renderSlots(dateKey) {
+        slotsGrid.classList.remove('single');
+        const date = new Date(dateKey + 'T00:00:00');
+
+        slotsTitle.textContent = date.toLocaleDateString('en-US', {
+            weekday: 'long', month: 'short', day: 'numeric'
+        });
+
+        const list = slotsForDate(dateKey);
+        const free = list.filter(s => s.state === 'free').length;
+
+        slotsSub.textContent = free
+            ? free + ' slot' + (free > 1 ? 's' : '') + ' available — tap one to book'
+            : 'All slots are booked. Please pick another day.';
+
+        slotsGrid.innerHTML = '';
+
+        list.forEach(s => {
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'slot ' + (s.state === 'free' ? 'free' : 'booked');
+            btn.textContent = s.time;
+
+            if (s.state === 'free') {
+                btn.addEventListener('click', () => showBookingForm(dateKey, s.time));
+            } else {
+                btn.disabled = true;
+                btn.title = 'Already booked';
+            }
+            slotsGrid.appendChild(btn);
+        });
+    }
+
+    function showBookingForm(dateKey, time) {
+        const date = new Date(dateKey + 'T00:00:00');
+
+        slotsTitle.textContent = 'Confirm your booking';
+        slotsSub.textContent = date.toLocaleDateString('en-US', {
+            weekday: 'long', month: 'long', day: 'numeric'
+        }) + ' at ' + time;
+
+        slotsGrid.classList.add('single');
+        slotsGrid.innerHTML = '';
+
+        const form = document.createElement('form');
+        form.className = 'book-form';
+        form.innerHTML =
+            '<input type="text" name="clientName" placeholder="Your full name" required autocomplete="name">' +
+            '<input type="tel"  name="clientPhone" placeholder="Phone number" required autocomplete="tel">' +
+            '<button type="submit" class="btn-primary">Confirm Appointment</button>' +
+            '<button type="button" class="btn-ghost" id="backToSlots">← Back to time slots</button>';
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name  = form.elements.clientName.value.trim();
+            const phone = form.elements.clientPhone.value.trim();
+            if (!name || !phone) return;
+
+            if (!bookings[dateKey]) bookings[dateKey] = {};
+            bookings[dateKey][time] = { name: name, phone: phone, at: new Date().toISOString() };
+            saveBookings();
+
+            showConfirmation(dateKey, time, name);
+            renderCalendar();
+        });
+
+        slotsGrid.appendChild(form);
+
+        document.getElementById('backToSlots').addEventListener('click', () => {
+            renderSlots(dateKey);
+        });
+    }
+
+    function showConfirmation(dateKey, time, name) {
+        const date = new Date(dateKey + 'T00:00:00');
+
+        slotsTitle.textContent = "You're booked!";
+        slotsSub.textContent = 'A confirmation has been saved. We can’t wait to see you.';
+        slotsGrid.classList.add('single');
+        slotsGrid.innerHTML =
+            '<div class="confirm-card">' +
+                '<div class="check">✓</div>' +
+                '<p class="who">' + escapeHtml(name) + '</p>' +
+                '<p>' + date.toLocaleDateString('en-US', {
+                    weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+                }) + '</p>' +
+                '<p class="big">' + time + '</p>' +
+                '<button type="button" class="btn-primary" id="confirmDone">Done</button>' +
+            '</div>';
+
+        document.getElementById('confirmDone').addEventListener('click', closeModal);
+    }
+
+    function openModal() {
+        viewYear  = today.getFullYear();
+        viewMonth = today.getMonth();
+        selectedDateKey = null;
+
+        slotsGrid.classList.remove('single');
+        slotsTitle.textContent = 'Select a date';
+        slotsSub.textContent = 'Choose a highlighted day on the calendar.';
+        slotsGrid.innerHTML = '<p class="empty-note">No date selected yet.</p>';
+
+        renderCalendar();
+        modal.classList.add('open');
+        document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+        modal.classList.remove('open');
+        document.body.classList.remove('modal-open');
+    }
+
+    document.querySelectorAll('.js-book').forEach(el => {
+        el.addEventListener('click', function (e) {
+            e.preventDefault();
+            openModal();
+        });
+    });
+
+    document.getElementById('modalClose').addEventListener('click', closeModal);
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) closeModal();
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && modal.classList.contains('open')) closeModal();
+    });
+
+    document.getElementById('prevMonth').addEventListener('click', function () {
+        viewMonth--;
+        if (viewMonth < 0) { viewMonth = 11; viewYear--; }
+        renderCalendar();
+    });
+    document.getElementById('nextMonth').addEventListener('click', function () {
+        viewMonth++;
+        if (viewMonth > 11) { viewMonth = 0; viewYear++; }
+        renderCalendar();
+    });
+    </script>
+
+</body>
+</html>
