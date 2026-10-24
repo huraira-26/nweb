@@ -41,7 +41,7 @@
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#designs">Our Designs</a></li>
-                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#book" class="nav-cta js-book">Book Now</a></li>
             </ul>
@@ -172,7 +172,7 @@
                 <ul class="contact-list">
                     <li><span class="ci">✂️</span><div><a href="#services">Our Services</a></div></li>
                     <li><span class="ci">💅</span><div><a href="#designs">Our Designs</a></div></li>
-                    <li><span class="ci">💳</span><div><a href="#pricing">Pricing</a></div></li>
+                    <li><span class="ci">💳</span><div><a href="pricing.html">Pricing</a></div></li>
                     <li><span class="ci">📅</span><div><a href="#book" class="js-book">Book Appointment</a></div></li>
                     <li><span class="ci">💬</span><div><a href="mailto:hello@bellebloom.com">Send a Message</a></div></li>
                 </ul>
@@ -524,6 +524,9 @@
         if (viewMonth > 11) { viewMonth = 0; viewYear++; }
         renderCalendar();
     });
+
+    // Open the booking window when arriving from another page (e.g. pricing.html)
+    if (location.hash === '#book') openModal();
     </script>
 
 </body>
